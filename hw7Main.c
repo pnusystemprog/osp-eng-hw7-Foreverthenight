@@ -136,7 +136,7 @@ void sortPhoneBook(void *A, int size, cmp cfn, swap sfn)
     {
         for(j=0; j<size-1; j++)
         {
-            if(cfn(A, i,j+1)>0)
+            if(cfn(A, j,j+1)>0)
                 sfn(A,j,j+1);
         }
     }
